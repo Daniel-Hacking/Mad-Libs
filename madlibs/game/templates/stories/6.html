@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>A Farmer's Tale in Stardew Valley</h3>
+
+            <p>Once upon a time, there was a hardworking farmer named {{ i.noun }} who lived in the picturesque town of Stardew Valley. They had inherited a run-down farm from their grandfather, and had decided to leave their old life behind to start anew in the idyllic countryside.</p>
+            <p>{{ i.noun }} had a lot of work to do if they wanted to turn their farm into a thriving business. They had to clear the fields of rocks and debris, plant crops, and care for their livestock. But {{ i.noun }} was determined to succeed, and worked tirelessly from dawn until dusk every day.</p>
+            <p>As they tended to their farm, {{ i.noun }} also got to know the people of Stardew Valley. They made friends with the quirky locals, attending festivals and participating in community events. They even found love, starting a relationship with {{ i.adjective }} {{ i.noun2 }}, the charming owner of the {{ i.place }}.</p>
+            <p>But life on the farm was not always easy. {{ i.noun }} faced many challenges along the way, from {{ i.adjective2 }} weather conditions to pesky crows that threatened to steal their crops. But they never gave up, always finding a way to overcome any obstacle that came their way.</p>
+            <p>As the seasons changed and the years passed, {{ i.noun }}'s farm grew more and more prosperous. They expanded their operation, buying new equipment and hiring helpers to work alongside them. And through it all, they remained dedicated to their community and the land that had given them so much.</p>
+            <p>In the end, {{ i.noun }}'s hard work and determination paid off. Their farm had become the most successful in all of Stardew Valley, and they had found happiness and purpose in their new life. And as they looked out over their fields, {{ i.noun }} knew that they had truly found their place in the world.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

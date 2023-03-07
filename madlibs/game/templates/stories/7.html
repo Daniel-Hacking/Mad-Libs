@@ -1,0 +1,20 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>Alone on a Deserted Island</h3>
+
+            <p>Once upon a time, there was a {{ i.adjective }} {{ i.noun }} who found themselves stranded on a deserted island in the middle of the ocean. They had been sailing on a small boat when a storm hit and capsized their vessel, leaving them alone and adrift in the water.</p>
+            <p>After hours of struggling, {{ i.noun }} finally managed to swim to the island's sandy shore, exhausted and alone. They had nothing but the clothes on their back and a {{ i.item }} they had managed to salvage from the wreckage.</p>
+            <p>At first, {{ i.noun }} felt overwhelmed and scared. They had no idea how to survive on the island, with its harsh terrain and lack of resources. But as the days turned into weeks, {{ i.noun }} began to adapt to their new surroundings, learning to hunt for food and build shelter from the natural resources around them.</p>
+            <p>As {{ i.noun }} explored the island, they discovered that it was teeming with life. There were {{ i.adjective2 }} birds and animals, beautiful plants and flowers, and even a freshwater stream that ran through the heart of the island.</p>
+            <p>Despite the challenges they faced, {{ i.noun }} found solace in the beauty of the island and the sense of freedom that came with being alone in nature. They spent their days exploring the island, swimming in the ocean, and watching the stars at night.</p>
+            <p>But as time went on, {{ i.noun }} began to feel a growing sense of loneliness. They missed the sound of human voices and the comfort of civilization. They longed to be rescued and return to {{ i.place }} which they had left behind.</p>
+            <p>But despite this, {{ i.noun }} refused to give up hope. They continued to survive, day by day, keeping a watchful eye out for any passing ships or planes that might spot them on their deserted island. And through it all, they held on to the belief that one day, they would be rescued and returned to the world they had left behind.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

@@ -1,0 +1,20 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>A Day in the Life of a Skyrim Adventurer</h3>
+
+            <p>Once upon a time, there was a brave adventurer named {{ i.noun }}. They had traveled far and wide in the land of Skyrim, seeking out treasure and vanquishing dangerous creatures.</p>
+            <p>One day, {{ i.noun }} decided to explore the ruins of {{ i.place }}, an ancient and mysterious site rumored to be filled with treasure. They packed their bags with weapons, potions, and food, and set out on the long journey.</p>
+            <p>As they traveled, they passed through the rolling hills and forests of Skyrim, encountering many creatures along the way. They battled fearsome {{ i.animal }} and outsmarted cunning bandits, always keeping their eyes peeled for hidden dangers.</p>
+            <p>Finally, they arrived at the ruins of {{ i.place }}. The air was thick with the musty scent of old stone and dust, and {{ i.noun }} could feel the weight of history and mystery pressing down on them. They entered the ruins and began to explore.</p>
+            <p>As they crept through the dark passageways, {{ noun }} heard the sound of something moving in the shadows. They drew their sword and prepared to face whatever danger lay ahead. Suddenly, a {{ i.adjective2 }} {{ i.animal }} leapt out from the darkness, its eyes glowing with fury! {{ i.noun }} fought {{ i.adjective }}, dodging the creature's attacks and striking back with well-timed blows. Eventually, they emerged victorious, the creature lying dead at their feet.</p>
+            <p>Exhilarated from the battle, {{ i.noun }} continued their exploration of the ruins. They discovered hidden chambers filled with {{ i.item }}, and fought off more dangerous creatures as they made their way deeper into the depths.</p>
+            <p>As the sun began to set on the horizon, {{ i.noun }} emerged from the ruins, battered but triumphant. They decided to spend the night at a nearby inn, regaling the other patrons with tales of their adventures and marveling at the riches they had acquired.</p>
+            <p>And so, {{ i.noun }} drifted off to sleep, dreaming of the wonders and dangers that lay ahead in the land of Skyrim.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

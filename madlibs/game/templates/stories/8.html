@@ -1,0 +1,20 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>Trapped in the Snowy Mountains</h3>
+
+            <p>Once upon a time, there was a {{ i.adjective }} {{ i.noun }} who found themselves stranded in the snowy mountains after a skiing trip gone wrong. They had been skiing with a group of friends when a sudden snowstorm hit, separating them from the rest of the group and leaving them alone and stranded in the unforgiving terrain.</p>
+            <p>As they {{ i.verb2 }} in a small snow cave for warmth, {{ i.noun }} knew that they had to find a way to survive. They had no food or water, and the temperature was dropping rapidly. They knew that they had to act quickly if they wanted to make it out alive.</p>
+            <p>Over the next few days, {{ i.noun }} struggled to find food and shelter in the harsh mountain environment. They hiked through the deep snow, searching for any signs of civilization or help. But all they found was more snow, ice, and freezing winds.</p>
+            <p>Despite the challenges they faced, {{ i.noun }} refused to give up hope. They knew that they had to keep moving if they wanted to survive, and so they pressed on through the snowy wilderness.</p>
+            <p>Days turned into weeks, and {{ i.noun }} grew weaker and more tired with each passing day. But they never lost their determination to make it out alive. And finally, after what seemed like an eternity, they {{ i.verb }} upon a small cabin in the woods.</p>
+            <p>It was a stroke of luck, but it was exactly what {{ i.noun }} needed to survive. They huddled inside the cabin, using the supplies they found to keep warm and stay fed. And as the days turned into weeks, {{ i.noun }} waited patiently for a rescue team to arrive and bring them back to civilization.</p>
+            <p>In the end, {{ i.noun }}'s determination and resilience paid off. A search and rescue team finally found them in the cabin, and they were airlifted out of the mountains to {{ i.place }}. And as they looked out over the snowy peaks from the safety of the rescue helicopter, {{ i.noun }} knew that they had survived one of the most harrowing experiences of their life.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>Trapped in the Jungle</h3>
+            <p>Once upon a time, there was a {{ i.adjective }} {{ i.noun }} who found themselves lost in the heart of a dense jungle. They had been on an expedition to study the flora and fauna of the jungle when they became separated from their group and realized they had no idea where they were or how to get back.</p>
+            <p>As the days passed, {{ i.noun }} struggled to stay alive in the harsh jungle environment. The heat and humidity were oppressive, and the dense vegetation made it difficult to see and move around. But still, they refused to give up hope.</p>
+            <p>{{ i.noun }} knew that they had to find a way to survive, and so they set out on foot, hacking their way through the thick foliage and using the sun to guide them. They walked for hours, their clothes soaked with sweat and their body aching, but still they pressed on, refusing to give up.</p>
+            <p>Days turned into weeks, and {{ i.noun }} grew weaker and more exhausted with each passing day. They battled with hunger, thirst, and various wild {{ i.noun2 }} that roamed the jungle.</p>
+            <p>Finally, after what seemed like an eternity, {{ i.noun }} stumbled upon a clearing where they found a small stream and some fruit trees. They quenched their thirst and satisfied their hunger, and they knew that they had found a way to stay alive in the {{ i.adjective2 }} jungle.</p>
+            <p>{{ i.noun }} used the resources they found to build shelter and collect water, and they waited patiently for a rescue team to arrive and bring them back to civilization.</p>
+            <p>In the end, {{ i.noun }}'s resilience and determination paid off. A search and rescue team finally found them in the jungle, and they were brought back to safety. And as they looked out over the endless canopy of the jungle from the safety of the rescue helicopter, {{ i.noun }} knew that they had survived one of the most grueling experiences of their life.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

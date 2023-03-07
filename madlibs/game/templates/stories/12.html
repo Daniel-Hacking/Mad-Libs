@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>Trapped in the Swamp</h3>
+
+            <p>Once upon a time, there was a {{ i.adjective }} {{ i.noun }} who found themselves trapped in the murky depths of a swamp. They had been on a camping trip when they became separated from their group and realized they had no idea where they were or how to get back.</p>
+            <p>As the sun set and darkness crept in, {{ i.noun }} struggled to stay alive in the swampy environment. The mud sucked at their feet with every step, and the thick fog made it difficult to see and {{ i.verb }}. But still, they refused to give up hope.</p>
+            <p>{{ i.noun }} knew that they had to find a way to escape, and so they stumbled through the swamp, trying to find a way out. They {{ i.verb2 }} for hours, their clothes soaked with mud and their body aching, but still they pressed on, refusing to give up.</p>
+            <p>Days turned into weeks, and {{ i.noun }} grew weaker and more exhausted with each passing day. The swamp seemed to stretch on forever, and {{ i.noun }} was plagued by hunger, thirst, and various dangerous creatures that lurked in the mire.</p>
+            <p>Finally, after what seemed like an eternity, {{ i.noun }} stumbled upon a {{ i.adjective2 }} {{ i.place }} in the middle of the swamp. They built a shelter and tried to signal for help, but no one came. Days turned into weeks, and {{ i.noun }} began to lose hope.</p>
+            <p>But then, one day, a rescue team spotted {{ i.noun }}'s makeshift signal and came to their aid. {{ i.noun }} was brought back to safety, and as they looked out over the endless expanse of the swamp from the safety of the rescue boat, they knew that they had survived one of the most challenging experiences of their life.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

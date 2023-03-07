@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>A Day in the Life of a DOOM Slayer</h3>
+
+            <p>Once upon a time, there was a legendary DOOM Slayer named {{ i.noun }}. They had battled countless hordes of demons and saved the Earth from destruction many times over, wielding powerful weapons and an indomitable spirit.</p>
+            <p>One day, {{ i.noun2 }} and the forces of Hell launched a surprise attack on the DOOM Slayer's stronghold, {{ place }}. {{ i.noun }} sprang into action, grabbing their trusty {{ i.item }} and heading out to face the horde.</p>
+            <p>As they fought their way through the twisted corridors of {{ i.place }}, {{ noun }} encountered all manner of hellish creatures. They battled {{ i.adjective }} Imps and Hell Knights, blasting them to pieces with their devastating weaponry.</p>
+            <p>But the demons kept coming, their numbers seemingly endless. {{ i.noun }} fought on, their muscles aching and their heart pounding with adrenaline. They could feel the heat of the battle all around them, the stench of brimstone and blood filling their nostrils.</p>
+            <p>Finally, after what felt like hours of fighting, {{ i.noun }} emerged victorious. The last of the demons had fallen, and the stronghold was safe once again.</p>
+            <p>But {{ i.noun }} knew that this was only a temporary respite. The forces of Hell would never stop attacking, and {{ i.noun }} would have to be ready for them at all times. They returned to their training, honing their skills and building up their arsenal for the next battle.</p>
+            <p>And so, the DOOM Slayer continued their never-ending battle against the forces of Hell, a shining beacon of hope in a world overrun by darkness.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

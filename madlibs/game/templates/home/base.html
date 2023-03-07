@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href=" {% url 'home' %}">Mad Libs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mad Libs</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdownId" data-bs-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">Stories</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="{% url 'attribute_form' 1 %}">Skyrim</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 2 %}">Fall Out</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 3 %}">DOOM</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 4 %}">The Legand of Zelda</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 5 %}">No Mans Sky</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 6 %}">Stardew Valley</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 7 %}">Alone on a Deserted Island</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 8 %}">Trapped in the Snowy Mountains</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 9 %}">Adrift on the Open Sea</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 10 %}">Stranded in the Desert</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 11 %}">Trapped in the Jungle</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 12 %}">Trapped in the Swamp</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 13 %}">Fantasy Adventure</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 14 %}">The Space Explorer</a>
+                      <a class="dropdown-item" href="{% url 'attribute_form' 15 %}">The Cavern Explorer</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class='container mt-3 mb-5'>
+        {% block body %}
+        {% endblock %}
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

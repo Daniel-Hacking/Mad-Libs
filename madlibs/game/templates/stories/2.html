@@ -1,0 +1,23 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>A Day in the Life of a Wasteland Survivor</h3>
+
+            <p>Once upon a time, there was a tough survivor named {{ i.noun }} who lived in the harsh and unforgiving world of Fallout 4. They had survived many dangerous encounters and scraped by in the ruined wasteland, always on the lookout for resources and allies.</p>
+            <p>One day, {{ i.noun }} heard rumors of a hidden vault filled with valuable resources and secrets. They decided to set out on the dangerous journey to find it, equipped with their trusty {{ i.adjective }} {{ i.item }} and a few scraps of food.</p>
+            <p>As they walked through the barren wasteland, they encountered all sorts of dangers. They had to fend off vicious raiders, avoid deadly radiation, and navigate treacherous terrain.</p>
+            <p>Finally, they arrived at the hidden entrance to the vault. It was heavily guarded, but {{ i.noun }} was determined to find a way in. They used their skills and knowledge to sneak past the guards and hack the vault's security systems, finally gaining access to the treasure within.</p>
+            <p>Inside the vault, {{ i.noun }} discovered an incredible cache of {{ i.noun2 }}, {{ i.adjective2 }} weapons, and advanced technology. They marveled at the wonders of the pre-war world, and carefully gathered up as much loot as they could carry.</p>
+            <p>But as they prepared to leave the vault, they heard the sound of alarms ringing throughout the complex. The guards had discovered their presence and were closing in! {{ i.noun }} knew they had to act fast if they wanted to escape with their life and their treasure.</p>
+            <p>They sprinted through the twisting corridors, dodging gunfire and traps as they made their way towards the exit. Finally, they burst through the door and emerged into the bright sunlight, the guards hot on their heels.</p>
+            <p>With a final burst of energy, {{ i.noun }} {{ i.verb }} away from the vault, their heart pounding with fear and adrenaline. They escaped into the wasteland once again, their loot safely stashed away.</p>
+            <p>And so, {{ i.noun }} returned to their life as a survivor in the harsh world of Fallout 4, richer and wiser for their adventures.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+

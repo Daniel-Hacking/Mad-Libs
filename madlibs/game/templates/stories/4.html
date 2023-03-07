@@ -1,0 +1,21 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>A Hero's Journey in Hyrule</h3>
+
+            <p>Once upon a time, there was a brave hero named {{ i.noun }} who lived in the magical world of Hyrule. They had trained for years to master the art of the sword and the bow, and had dedicated themselves to protecting the land from evil.</p>
+            <p>One day, {{ i.noun }} received a vision from the mysterious Princess Zelda. She told them that an ancient evil had awakened and was threatening to destroy the land of Hyrule. {{ i.noun }} knew that they had to act fast if they wanted to save their homeland from destruction.</p>
+            <p>Equipped with their trusty {{ i.item }} and a few supplies, {{ i.noun }} set out on a perilous journey across the land. They encountered all manner of dangers along the way, from {{ i.adjective }} monsters to treacherous terrain.</p>
+            <p>But {{ i.noun }} never wavered in their determination to save Hyrule. They {{ i.verb }} the {{ i.adjective }} heat of the desert, the icy winds of the mountains, and the dark forests filled with hidden dangers.</p>
+            <p>Finally, after many long days and nights, {{ i.noun }} arrived at the ancient ruins where the evil had taken root. They fought their way through hordes of monsters, battling {{ i.adjective }} Lynels and hulking Stone Taluses with all their might.</p>
+            <p>At last, {{ i.noun }} stood face to face with the evil itself. It was a towering monster with glowing eyes and razor-sharp claws, poised to destroy everything in its path.</p>
+            <p>{{ i.noun }} fought with all their strength, dodging the monster's attacks and striking back with {{ i.adjective2 }} blows. The battle was long and grueling, but in the end, {{ i.noun }} emerged victorious.</p>
+            <p>With the evil vanquished, Hyrule was safe once again. {{ i.noun }} returned to their home village, hailed as a hero by all who knew them. And as they rested, {{ i.noun }} knew that they would always be ready to defend their beloved homeland from any threat that might come its way.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

@@ -1,0 +1,21 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>Stranded in the Desert</h3>
+
+            <p>Once upon a time, there was a {{ i.adjective }} {{ i.noun }} who found themselves lost in the vast expanse of the desert. They had been on a journey through the arid landscape when they became separated from their group and realized they had no idea where they were or how to get back.</p>
+            <p>As the sun beat down mercilessly, {{ i.noun }} struggled to stay alive in the {{ i.adjective2 }} desert environment. They had no food or water, and the sandstorms made it difficult to see and {{ i.verb }}. But still, they refused to give up hope.</p>
+            <p>{{ i.noun }} knew that they had to find a way to survive, and so they set out on foot, using the sun and stars to guide them. They walked for hours, their feet blistering and their throat parched, but still they pressed on, refusing to give up.</p>
+            <p>Days turned into weeks, and {{ i.noun }} grew weaker and more exhausted with each passing day. But still, they pressed on, driven by their determination to survive.</p>
+            <p>Finally, after what seemed like an eternity, {{ i.noun }} spotted a small {{ i.place }} in the distance. They {{ i.verb2 }} towards it, their heart pounding with hope, and to their relief, they found a small pool of water and some {{ i.item }}.</p>
+            <p>{{ i.noun }} rested and rehydrated, and they knew that they had found a way to stay alive in the unforgiving desert. They used the resources they found to build shelter and collect water, and they waited patiently for a rescue team to arrive and bring them back to civilization.</p>
+            <p>In the end, {{ i.noun }}'s resilience and determination paid off. A search and rescue team finally found them in the {{ i.place }}, and they were brought back to safety. And as they looked out over the endless sands of the desert from the safety of the rescue helicopter, {{ i.noun }} knew that they had survived one of the most grueling experiences of their life.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    
+

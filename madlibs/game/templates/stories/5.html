@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>A Lone Explorer's Journey in the Universe of No Man's Sky</h3>
+
+            <p>Once upon a time, there was a lone explorer named {{ i.noun }} who traveled the vast and infinite universe of No Man's Sky. They piloted their trusty spaceship, the {{ i.adjective }} {{ i.noun2 }}, through the depths of space, exploring strange new worlds and discovering untold wonders.</p>
+            <p>As they traveled from planet to planet, {{ i.noun }} encountered all manner of {{ i.adjective }} creatures and {{ i.adjective2 }} landscapes. They marveled at towering mountains and sprawling deserts, swam in crystal-clear oceans, and soared through the clouds on wings of light.</p>
+            <p>But the universe of No Man's Sky was not without its dangers. {{ i.noun }} faced harsh environments and hostile life forms that threatened to end their journey at any moment. They had to be ever-vigilant, keeping their ship and equipment in good repair and staying one step ahead of any dangers that might lurk around the next corner.</p>
+            <p>Despite these challenges, {{ i.noun }} never lost their sense of wonder and excitement. They continued to explore, charting new territories and uncovering the secrets of the universe one planet at a time.</p>
+            <p>As they journeyed deeper into the universe, {{ i.noun }} began to uncover clues about the mysterious Atlas, a cosmic entity that held the key to the ultimate fate of the universe. They followed these clues to {{ i.place }}, where they discovered a gateway to another dimension.</p>
+            <p>With their heart pounding with anticipation, {{ i.noun }} stepped through the gateway, ready to face whatever lay beyond. And as they vanished into the infinite expanse, they knew that their journey was far from over.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

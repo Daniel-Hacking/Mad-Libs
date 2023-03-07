@@ -1,0 +1,18 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>The Space Explorer</h3>
+            <p>In the year 3000, humanity had mastered the technology to travel through space, and so a brave {{ i.adjective }} {{ i.noun }} named Greg set out on a mission to explore the vast reaches of the universe. Greg had always been fascinated by the stars and was determined to uncover the {{ i.adjective2 }} secrets of the cosmos.</p>
+            <p>Greg's journey took them to the farthest reaches of the galaxy, where they encountered {{ i.item }}, met {{ i.noun2 }}, and faced countless dangers. They {{ i.verb }} asteroid fields, battled rogue robots, and narrowly escaped black holes.</p>
+            <p>Despite the many challenges, Greg refused to give up. They were determined to push beyond the boundaries of what was known and chart new territory for future explorers to follow. And so, they pressed on, discovering new planets, collecting data, and making contact with new life forms.</p>
+            <p>As Greg journeyed deeper into space, they uncovered a dark and sinister plot. An evil alien race was intent on destroying humanity and had amassed a powerful army to do so. Greg knew that they had to act quickly to stop the invaders before it was too late.</p>
+            <p>With their trusty spaceship and a team of allies they had picked up along the way, Greg {{ i.verb }} a daring attack on the alien fleet. The battle was fierce and intense, but in the end, Greg emerged victorious, having saved humanity from certain doom.</p>
+            <p>Greg returned to {{ i.place }} a hero, hailed by the people as a champion of humanity's future in space. And even though their journey had come to an end, Greg knew that there would always be more adventures waiting out there among the stars.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

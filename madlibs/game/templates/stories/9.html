@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+
+
+{% block body %}
+    <div class="text-center">
+        {% for i in attributes|slice:":1" %}
+            <h3>Adrift on the Open Sea</h3>
+
+            <p>Once upon a time, there was a {{ i.adjective }} {{ i.noun }} who found themselves lost on the open sea. They had been {{ i.verb }} on a small boat when a storm hit, tearing the sails and leaving them stranded in the middle of the ocean with no way to navigate or call for help.</p>
+            <p>As the days turned into weeks, {{ i.noun }} struggled to survive on the open water. They had no food or water, and the sun beat down relentlessly, leaving them sunburned and dehydrated.</p>
+            <p>Despite the challenges they faced, {{ i.noun }} refused to give up hope. They knew that they had to keep their wits about them if they wanted to survive, and so they improvised, using their {{ i.adjective2 }} skills and resourcefulness to stay alive.</p>
+            <p>They fished for food, using a makeshift line and hook to catch whatever fish they could find in the open water. They collected rainwater in a bucket, using it to quench their thirst and stay hydrated.</p>
+            <p>Days turned into weeks, and {{ i.noun }} drifted farther and farther from {{ i.place }}. But still, they refused to give up hope. They kept their eyes trained on the horizon, searching for any signs of rescue or help.</p>
+            <p>Finally, after what seemed like an eternity, {{ i.noun }} spotted a passing ship on the horizon. They frantically signaled for help, and to their relief, the ship changed course and headed towards them.</p>
+            <p>As they were pulled aboard the rescue ship, {{ i.noun }} collapsed from exhaustion and relief. They had survived one of the most {{ i.adjective2 }} experiences of their life, and they knew that they owed their survival to their own resourcefulness and determination.</p>
+            <p>The end.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
